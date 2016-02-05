@@ -1,0 +1,23 @@
+Regular Expressions are used to match different combinations of character string
+s
+within files and data streams. Regular Expressions are composed of two types:
+1-	literal characters
+	(these characters are the common characters we use every day. They are
+	characters such as 5, A, @, etc. They mean what they are seen as.)
+2-	Meta characters (magic)
+	(these characters represent or more other characters and can match one o
+r
+	more ASCII characters, aside from their own value.)
+
+These are two types of characters can be combined to match strings such as:
+1- the word "market", but only at the start of a line (^\<market\>)
+2- empty lines(^$)
+3- the string market (string)
+4- any possible combination of b or B followed by any number of any characters
+   followed by gates or Gates ([bb].*[gG]ates).
+
+Regular expressions are sometimes mixed up with Command Line Metacharacters
+which serve a similar function, but with different magical characters, and for
+matching filenames at command line. The ability to to effectively use Regular
+Expressions can signicantly incres the power that a user has when searching
+for character strings with files.
