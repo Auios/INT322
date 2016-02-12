@@ -53,5 +53,6 @@ if($_GET)
             echo('Output: Empty');
         }
         ?>
+        <p><a href="lab3-4.php">Previous Lab</a> --- <a href="lab3-6.php">Next Lab</a></p>
     </body>
 </html>

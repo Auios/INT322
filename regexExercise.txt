@@ -1,0 +1,93 @@
+1. :1,$s/^/> /
+	Add  '> ' to the left of every line
+
+2. :1,$s/the/THE/
+	Change the first instance of 'the' to 'THE'
+
+3. :1,$s/a.*e/XXX/
+	Replace all text between first 'a' and last 'e' with 'XXX'
+
+4. :1,$s/[Tt].*[.]/XXX/
+	Replace all text between first 'T' or 't' and last '.' with 'XXX'
+
+5. :1,$s/expresssions/expressions/
+	Change 'expresssions' to 'expressions'
+
+6. :1,10s/literal/LITERAL/
+	From line 1 to 10 replace 'literal' with 'LITERAL'
+
+7. :1,$s/\/Literal/
+	Did not find pattern
+
+8. :1,$s/^.*$/XXX/
+	Replace every line with 'XXX'
+
+9. :1,$s/^..*$/XXX/
+	Replace every line that has text with 'XXX'
+
+10. :1,$s/^.*.$/XXX/
+	Replace every line that has text with 'XXX'
+
+11. :1,$s/s*/sXXX/
+	Puts sXXX at the start of every line
+
+12. :1,$s/ss*/sXXX/
+	Matches the first instance of 'ss' with 0 or more 's' after it and replaces it with 'sXXX'
+
+13. :1,$s/\*ss*\/sXXX/
+	Matches the first instance of 'ss' with 0 or more 's' before and or after it and replaces it with sXXX
+
+14. :1,$s/[A-Z]\.[A-Z]/XXX/
+	Matches the first instance of any capital letter then a period then any capital letter and
+	replaces those three characters with XXX
+
+15. :1,$s/a.*{3}/XXX/
+	Doesnt work because the 3 does not work on a wild card
+
+16. :1,$s/a..*{0,1}/XXX/
+	Replaces the first instance of a with any two characters with a third repeated character of the
+	previous character
+
+17. :1,$s/a[^ ]/XXX/
+	
+
+18. :1,$s/a[^r].*/XXX/
+
+
+19. :1,$s/[A-Z][0-9]/XXX/
+
+
+20. :1,$s/\<[a-zA-Z][0-9]\>/\&/
+
+
+
+What do the following regular expressions match:
+
+1.    ^#$
+
+
+2.   $PATH
+
+
+3.  $[$PATH]
+
+
+4. \$$PATH
+
+
+5, ^...$
+
+
+6. "word"
+
+
+7. "*word*"
+
+
+8. \*word*\
+
+
+9. \<word\> ( or \bword\b in Perl)
+
+
+10 [^w]ord
