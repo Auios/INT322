@@ -49,45 +49,48 @@
 	previous character
 
 17. :1,$s/a[^ ]/XXX/
-	
+	Finds the first instance of the character 'a' with any other single character after it thats not
+	a space and replaces it was XXX
 
 18. :1,$s/a[^r].*/XXX/
-
+	Finds the first instance of the character 'a' followed by NOT 'r' and replaces it with and the rest of the
+	line with XXX
 
 19. :1,$s/[A-Z][0-9]/XXX/
-
+	Finds the first instance of a capital letter and a number after it and replaces it with XXX
 
 20. :1,$s/\<[a-zA-Z][0-9]\>/\&/
-
-
+	Finds '<' then any letter that is capital or lower case with any single number after it that is followed
+	by '>' and '&'
 
 What do the following regular expressions match:
 
 1.    ^#$
-
+	Looks for the character '#' at the start and end of the line
 
 2.   $PATH
-
+	Finds the first instance of 'PATH'
 
 3.  $[$PATH]
-
+	Looks for the first instance of P or A or T or H
 
 4. \$$PATH
-
+	Looks for $ and PATH at the end of the line
 
 5, ^...$
-
+	Looks for any 3 characters
 
 6. "word"
-
+	Matches "word"
 
 7. "*word*"
-
+	Matches 'word' that could have zero or more characters on either side of it
 
 8. \*word*\
-
+	Literally matches "*word*"
 
 9. \<word\> ( or \bword\b in Perl)
-
+	Literally matches "<word>"
 
 10 [^w]ord
+	looks for an instance of 'ord' that does not start with 'w'
