@@ -1,0 +1,6 @@
+iOS 4.2.1
+iOS 7.1.2
+iOS 9.2
+iOS 9.2
+iOS 8.0
+iOS 9.2
