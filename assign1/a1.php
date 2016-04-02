@@ -239,6 +239,13 @@
 					$vErr = "Bad max";
 				}
 
+				//Is min higher than max? >.>
+				if($min > $max)
+				{
+					$isValid = false;
+					$vErr = "Min is higher than max";
+				}
+
 				echo("<br><hr><br>");
 
 				if($isValid)

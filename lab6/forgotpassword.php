@@ -59,19 +59,10 @@ if($_POST)
 
 <html>
 	<head>
-		<title>Forgot password</title>
-
+		<title>Forgot password</title>
 		<style>
-			body
-			{
-				width: 30%;
-				margin: 100px auto;
-			}
-
-			.warning
-			{
-				color: red;
-			}
+			body{width: 30%;margin: 100px auto;}
+			.warning{color: red;}
 		</style>
 	</head>
 	<body>
@@ -94,7 +85,7 @@ if($_POST)
 				<input type="submit">
 			</fieldset>
 		</form>
-		<p><a href="http://zenit.senecac.on.ca:11349/cgi-bin/lab5/login.php">Login</a></p>
-		<p><a href="http://zenit.senecac.on.ca:11349/cgi-bin/lab5/forgotpassword.php">Reload page</a></p>
+		<p><a href="http://zenit.senecac.on.ca:11349/cgi-bin/lab6/login.php">Login</a></p>
+		<p><a href="http://zenit.senecac.on.ca:11349/cgi-bin/lab6/forgotpassword.php">Reload page</a></p>
 	</body>
 </html>
