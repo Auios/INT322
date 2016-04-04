@@ -2,7 +2,6 @@
 class dbLink
 {
 	private $conn;
-	private $result;
 	function __construct($dbnm)
 	{
 		$lines = file('/home/int322_161a19/secret/topsecret');
